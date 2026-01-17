@@ -1,0 +1,4 @@
+#.
+#Disable Controller Exit on Right-click
+disableQuickExit = false
+

@@ -1,0 +1,19 @@
+
+["Shotgun Trap"]
+	#How much damage the Shotgun Trap does
+	"Shotgun Trap Damage" = 32.0
+	#Whether or not loading two shells deals more damage
+	"Shotgun Trap Double Load" = false
+
+[Claymore]
+	#How much damage the Claymore does
+	"Claymore Damage" = 24.0
+
+["Pipe Bomb"]
+	#How long the Pipe Bomb fuse is
+	"Pipe Bomb Fuse" = 90.0
+
+["Zip Gun"]
+	#How much damage the Zip Gun does
+	"Zip Gun Damage" = 18.0
+
