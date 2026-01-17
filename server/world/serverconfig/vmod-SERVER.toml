@@ -1,0 +1,40 @@
+
+[VModConfig]
+	#MAY BREAK SOMETHING. if true, will automatically remove massless ships if they appear.
+	AUTOREMOVE_MASSLESS_SHIPS = true
+	#No comment
+	SCALE_THRUSTERS_THRUST = true
+	#DO NOT CHANGE
+	DIMENSION_GRAVITY_VALUES = "minecraft:dimension:minecraft:overworld 0.0 -10.0 0.0"
+
+	[VModConfig.Permissions]
+		#No Comment
+		#Range: 0 ~ 4
+		VMOD_COMMANDS_PERMISSION_LEVEL = 2
+		#No Comment
+		#Range: 0 ~ 4
+		VMOD_OP_COMMANDS_PERMISSION_LEVEL = 4
+		#No Comment
+		#Range: 0 ~ 4
+		VMOD_TOOLGUN_PERMISSION_LEVEL = 2
+		#DO NOT CHANGE
+		ALWAYS_ALLOWED = "99423389-2ac4-45ab-afb6-4796e0b4935c,35a96954-031d-46f4-aeea-117e44dcadcd,c77fddd2-c607-474f-8a88-2cee0272bebe,c52ab438-4ffa-4e5b-96cc-0127d8ec9e4a,d72d31d9-5209-4dea-a8b8-10c2572bd5b5,2126e877-8a39-48b3-9724-275f9e67a421,22cd34c4-2e9f-40a0-bbb5-0604f148ce58,989a2629-b656-4819-8c3f-4ea2ae272f60,bc75cd53-7d03-4d26-a3dd-11f07fa097b6"
+		#DO NOT CHANGE
+		ALWAYS_DISALLOWED = ""
+
+	[VModConfig.Schematics]
+		#No Comment
+		#Range: 0 ~ 20000
+		TIMEOUT_TIME = 50
+
+	[VModConfig.ServerToolgunSettings]
+		#No Comment
+		#Range: 1.0 ~ 1.7976931348623157E308
+		MAX_RAYCAST_DISTANCE = 100.0
+		#Number of connected ships a player can copy in one request. <=0 for unlimited.
+		#Range: > -2147483648
+		MAX_SHIPS_ALLOWED_TO_COPY = -1
+		#Reload the game for change to take the effect.
+		#Range: 512 ~ 1000000
+		SCHEMATIC_PACKET_PART_SIZE = 30000
+

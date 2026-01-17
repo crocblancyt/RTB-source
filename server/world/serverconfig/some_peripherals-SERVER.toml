@@ -1,0 +1,206 @@
+
+[SomePeripheralsConfig]
+
+	[SomePeripheralsConfig.GogglesSettings]
+
+		[SomePeripheralsConfig.GogglesSettings.GogglesAllowedEntityData]
+			#No comment
+			pos = true
+			#No comment
+			eye_pos = true
+			#No comment
+			eye_height = true
+			#No comment
+			look_angle = true
+			#No comment
+			dimension = true
+			#No comment
+			entity_type = true
+			#No comment
+			air_supply = true
+			#No comment
+			max_air_supply = true
+			#No comment
+			health = true
+			#No comment
+			max_health = true
+			#No comment
+			armor_value = true
+			#No comment
+			armor_cover_percentage = true
+			#No comment
+			absorption_amount = true
+			#No comment
+			is_baby = true
+			#No comment
+			is_blocking = true
+			#No comment
+			is_sleeping = true
+			#No comment
+			is_fall_flying = true
+			#No comment
+			speed = true
+			#pitch. In degrees.
+			xRot = true
+			#yaw. In degrees.
+			yHeadRot = true
+			#yaw. In degrees
+			yBodyRot = true
+			#No comment
+			nickname = true
+			#No comment
+			experience_level = true
+			#No comment
+			xp_needed_for_next_level = true
+			#No comment
+			experience_progress = true
+
+		[SomePeripheralsConfig.GogglesSettings.RangeGogglesSettings]
+			#In milliseconds
+			#Range: 0 ~ 9223372036854775807
+			max_allowed_raycast_waiting_time_ms = 4000
+			#In milliseconds
+			#Range: 0 ~ 9223372036854775807
+			max_batch_raycast_time_ms = 100
+
+	[SomePeripheralsConfig.LinkPortSettings]
+		#If time between now and previous update is bigger than N, then the connection is treated as terminated. In mc ticks
+		#Range: 0 ~ 9223372036854775807
+		max_connection_timeout_time_ticks = 1
+
+	[SomePeripheralsConfig.RadarSettings]
+		#Max radius of a scan for entities. If <=0 then unlimited.
+		#Range: 4.9E-324 ~ 1.7976931348623157E308
+		max_entity_search_radius = 4.9E-324
+		#Max radius of a scan for ships. <=0 for unlimited.
+		#Range: 4.9E-324 ~ 1.7976931348623157E308
+		max_ship_search_radius = 4.9E-324
+		#Max time a radar can try to get all entities in radius.
+		#Range: 0 ~ 9223372036854775807
+		max_entity_get_time_ms = 100
+
+		[SomePeripheralsConfig.RadarSettings.RadarAllowedEntityData]
+			#No comment
+			pos = true
+			#No comment
+			eye_pos = true
+			#No comment
+			eye_height = true
+			#No comment
+			look_angle = true
+			#No comment
+			dimension = true
+			#No comment
+			entity_type = true
+			#No comment
+			air_supply = true
+			#No comment
+			max_air_supply = true
+			#No comment
+			health = true
+			#No comment
+			max_health = true
+			#No comment
+			armor_value = true
+			#No comment
+			armor_cover_percentage = true
+			#No comment
+			absorption_amount = true
+			#No comment
+			is_baby = true
+			#No comment
+			is_blocking = true
+			#No comment
+			is_sleeping = true
+			#No comment
+			is_fall_flying = true
+			#No comment
+			speed = true
+			#pitch. In degrees.
+			xRot = true
+			#yaw. In degrees.
+			yHeadRot = true
+			#yaw. In degrees
+			yBodyRot = true
+			#No comment
+			nickname = true
+			#No comment
+			experience_level = true
+			#No comment
+			xp_needed_for_next_level = true
+			#No comment
+			experience_progress = true
+
+		[SomePeripheralsConfig.RadarSettings.AllowedShipData]
+			#No comment
+			id = true
+			#No comment
+			pos = true
+			#No comment
+			mass = true
+			#No comment
+			rotation = true
+			#No comment
+			velocity = true
+			#No comment
+			size = true
+			#No comment
+			scale = true
+			#No comment
+			moment_of_inertia_tensor = true
+			#No comment
+			center_of_mass_in_a_ship = true
+
+	[SomePeripheralsConfig.RaycasterSettings]
+		#Maximum amount of blocks ray can travel. Set to num <=0 for no limit
+		#Range: > -2147483648
+		max_raycast_distance = -1
+		#Will check for intersections with entities every N blocks traveled in N radius
+		#Range: > 1
+		entity_check_radius = 32
+		#Maximum amount of blocks ray can travel when raycasting without checking for blocks in world. Set to num <=0 for no limit
+		#Range: > -2147483648
+		max_entities_only_raycast_distance = -1
+		#Will check for intersections with entities every N blocks traveled in N radius when raycasting without checking for blocks in world
+		#Range: > -2147483648
+		entities_only_raycast_entity_check_radius = 512
+		#Includes Valkyrien Skies ships if VS is installed
+		check_for_intersection_with_entities = true
+		#No comment
+		return_abs_pos = true
+		#Returns hit position of ray relative to world origin
+		return_hit_pos = true
+		#Returns hit position of ray relative to ray origin
+		return_rel_hit_pos = true
+		#Distance is from ray origin to hit position
+		return_distance = true
+		#No comment
+		return_block_type = true
+		#If ray hit block on ship
+		return_ship_id = true
+		#Returns hit position of ray relative to shipyard origin
+		return_shipyard_hit_pos = true
+		#No comment
+		return_entity_type = true
+		#No comment
+		return_entity_id = true
+
+	[SomePeripheralsConfig.RaycastingSettings]
+		#Max time before yielding.
+		#Range: 0 ~ 9223372036854775807
+		max_raycast_time_ms = 50
+		#Max time raycast will try to get entities from level before stopping. Prevents mc from freezing when raycasting in areas with too many entities at the cost of not entirely correct result.
+		#Range: 0 ~ 9223372036854775807
+		max_entity_get_time_ms = 10
+		#Includes Valkyrien Skies ships. If in that mode ray hits VS ship, it will check for blocks on that ship.
+		allow_raycasting_for_entities_only = true
+		#No comment
+		no_chunkloading_rays = false
+
+	[SomePeripheralsConfig.WorldScannerSettings]
+		#In blocks from scanner. <= -1 for unlimited range.
+		#Range: > -2147483648
+		max_allowed_range = -1
+		#No comment
+		no_chunkloading = false
+
