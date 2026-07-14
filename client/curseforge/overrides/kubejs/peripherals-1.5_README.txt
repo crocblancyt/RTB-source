@@ -1,5 +1,0 @@
-Peripherals 1.5
-
-Changelog:
-- documentation moved to : https://github.com/CrocBlancYT/KJSCC-Peripherals/wiki
-- gyroscope, raycaster, weapons manager fixed
